@@ -54,6 +54,20 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Product</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#short-description">Short Description</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#more-info-in-product-picklist">'More Info' in product picklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-option-with-input-field">'Other' option with input field</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#product-tabs">Product tabs</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#similar-items">Similar Items</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#related-items">Related Items</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -91,7 +105,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="product-page">Product Page</h1>
+<p>The product page displays the information about the product. It includes the product name, description, price, options, and an image of the product.</p>
+<p>Most of the product page is built with the default BigCommerce settings, for more information regarding how to add a product in Bigcommerce with the V2 settings, refer to this <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US" target="_blank">documentation</a>. </p>
+<p>There are some parts on the product page that need to follow specific guidelines.</p>
+<h2 id="short-description">Short Description</h2>
+<p><img alt="Short Description" src="../img/short-description.png" /></p>
+<p>The short description is a brief description of the product. It should be a short paragraph that describes the product in a few sentences. The short description should be displayed at the top of the product page.
+It is not mandatory, so not all the products will have it.</p>
+<h2 id="more-info-in-product-picklist">'More Info' in product picklist</h2>
+<p><img alt="More Info" src="../img/more-info.png" /></p>
+<p>The product picklist is a dropdown menu that allows the user to select different options for the product. To display the 'More info' button in the product picklist, we need to add the information in the Metafields.</p>
+<h2 id="other-option-with-input-field">'Other' option with input field</h2>
+<p><img alt="Other Option" src="../img/other-input.png" /></p>
+<p>The 'Other' option with an input field is a custom option that allows the user to enter a custom value for the option when selecting 'Other'. To add the 'Other' option with an input field, we need to have an input text with the same name as the 'Other' option. from the previous set of options.</p>
+<h2 id="product-tabs">Product tabs</h2>
+<p><img alt="Product Tabs" src="../img/product-tabs.png" /></p>
+<p>The product tabs are used to display additional information about the product. The tabs include the description, specifications, shipping info, and FAQ. 
+The content comes from the product description, following a specific format, like the one already set in some of the current products.
+The format should be as follows:
+The shipping info comes from the 'Availability text' field in the product settings.</p>
+<h2 id="similar-items">Similar Items</h2>
+<p><img alt="Similar Items" src="../img/similar-items.png" /></p>
+<p>The similar items section displays products that are similar to the current product and they can be added all at once by clicking on the button. Note that this is not the Related Items. The products are set using metafields and they must be simple products (with no variants).</p>
+<h2 id="related-items">Related Items</h2>
+<p><img alt="Related Items" src="../img/related-items.png" /></p>
+<p>The related items section displays products that are related to the current product. These are usually automatically picked by BigCommerce or can be set manually in the product settings.
+Please refer to the BigCommerce <a href="https://support.bigcommerce.com/s/article/Adding-Products-v2?language=en_US#related" target="_blank">documentation</a> for more details.</p>
               
             </div>
           </div><footer>
