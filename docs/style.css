@@ -1,0 +1,28 @@
+.wy-side-nav-search {
+    background-color: #00527C;
+}
+
+.wy-nav-side {
+    background-color: #313131;
+}
+
+.rst-versions .rst-current-version {
+    background-color: #007EA8;
+}
+
+.wy-nav-content a {
+    color: #007EA8;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #007EA8;
+}
+
+.wy-menu-vertical li.toctree-l1.current>a {
+    background-color: #F7941D;
+    border: 0;
+}
+
+.wy-menu-vertical li.current ul {
+    background-color: #ececec;
+}
