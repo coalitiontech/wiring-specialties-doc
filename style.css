@@ -1,28 +1,36 @@
+:root {
+    --var-primary: #007EA8;
+    --var-primary-dark: #00527C;
+    --var-secondary: #F7941D;
+    --var-dark: #313131;
+    --var-light: #ececec;
+}
+
 .wy-side-nav-search {
-    background-color: #00527C;
+    background-color: var(--var-primary-dark);
 }
 
 .wy-nav-side {
-    background-color: #313131;
+    background-color: var(--var-dark);
 }
 
 .rst-versions .rst-current-version {
-    background-color: #007EA8;
+    background-color: var(--var-primary);
 }
 
 .wy-nav-content a {
-    color: #007EA8;
+    color: var(--var-primary);
 }
 
 .wy-menu-vertical a:hover {
-    background-color: #007EA8;
+    background-color: var(--var-primary);
 }
 
 .wy-menu-vertical li.toctree-l1.current>a {
-    background-color: #F7941D;
+    background-color: var(--var-secondary);
     border: 0;
 }
 
 .wy-menu-vertical li.current ul {
-    background-color: #ececec;
+    background-color: var(--var-light);
 }
