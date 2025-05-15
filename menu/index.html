@@ -62,6 +62,8 @@
               </ul>
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Mega Menu</a>
+    <ul class="current">
+    </ul>
                 </li>
               </ul>
       </div>
@@ -87,7 +89,160 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="menu">Menu</h1>
+<p><img alt="mega-menu.png" src="../img/mega-menu.png" /></p>
+<p>The Mega Menu is a powerful and flexible component that allows you to create complex navigation structures. It can be used to display a large number of links in a compact space, making it ideal for websites with many categories or subcategories.</p>
+<p>In BigCommerce, unfortunately, we don't have an easy way to manage mega menu structures. So we adapt according to the requirements of each project. Please note that since this one is built in JaaScript, it will load icons from category if the user has JavaScript disabled, from example.</p>
+<p>For Wiring Specialties, we used the Advanced Metafields app interface to make it a bit simpler to add all the links we needed.</p>
+<p>To edit the Mega Menu, you can go to the Channels metafields in the Advanced Metafields app and edit the structure to each 1 level item in the menu.
+Each accordion contains a place to edit the title, url, children, and banners.</p>
+<p>The banners set here will show while the user is hovering over the first level of the menu.
+<img alt="mega-menu2.png" src="../img/mega-menu2.png" /></p>
+<p>They need to follow this HTML format</p>
+<pre><code class="language-html">
+</code></pre>
+<p>In the children field, we need to follow a specific JSON format to display the second and third levels.</p>
+<pre><code class="language-json">[
+  {
+    &quot;label&quot;: &quot;GM V8 LS Engines&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [
+      {
+        &quot;label&quot;: &quot;LS 3rd Gen (LS1 / VORTEC)&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/ls1-vortec-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;LS 4th Gen DBC (LS2 LS9)&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/lsx-gen-4-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;LS 4th Gen DBW 58x (LS3 L99 L92)&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/ls3-dbw-swap-wiring-harnesses/&quot;
+      }
+    ]
+  },
+  {
+    &quot;label&quot;: &quot;Nissan Engines&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [
+      {
+        &quot;label&quot;: &quot;S13 SR20DET RWD&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/s13-sr20det-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;S14 SR20DET RWD&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/s14-sr20det-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;S15 SR20DET RWD&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/s15-sr20det-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;SR20DE RWD&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/sr20de-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;SR20VET VVL RWD&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/sr20det-vvl/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;RB20DET&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/rb20det-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;RB25DET&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/rb25det-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;RB25DET NEO&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/rb25det-neo-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;RB26DETT&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/rb26dett-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;VG30DE(TT)&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/vg30dett.html&quot;
+      },
+      {
+        &quot;label&quot;: &quot;VH45DE&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/vh45de-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;VQ35DE&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/vq35de-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;S13 KA24E / KA24DE&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/s13-ka24de-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;S14 KA24DE&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/s14-ka24de-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;S13 CA18DET&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/ca18det-wiring-harnesses/&quot;
+      }
+    ]
+  },
+  {
+    &quot;label&quot;: &quot;Toyota Engines&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [
+      {
+        &quot;label&quot;: &quot;1JZGTE (non-VVTi &amp; VVTi)&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/1jzgte-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;2JZGTE (non-VVTi &amp; VVTi) / 2JZGE VVTi&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/2jzgte-swap-wiring-harnesses/&quot;
+      },
+      {
+        &quot;label&quot;: &quot;3SGE BEAMS&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/beams-3sge-wiring-harnesses/&quot;
+      }
+    ]
+  },
+  {
+    &quot;label&quot;: &quot;Honda Engines&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [
+      {
+        &quot;label&quot;: &quot;K20/K24 RWD Swap Engine Harnesses&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/k-series-wiring-harnesses/&quot;
+      }
+    ]
+  },
+  {
+    &quot;label&quot;: &quot;Mazda Engines&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [
+      {
+        &quot;label&quot;: &quot;13B-REW Rotary Engine Harnesses&quot;,
+        &quot;url&quot;: &quot;https://www.wiringspecialties.com/13b-rew-wiring-harnesses/&quot;
+      }
+    ]
+  }
+]
+</code></pre>
+<p>In case there are no children for the third levels, you can also display banners instead, following this format:</p>
+<pre><code class="language-json">[
+  {
+    &quot;label&quot;: &quot;Clearance Items&quot;,
+    &quot;url&quot;: null,
+    &quot;children&quot;: [],
+    &quot;banners&quot;: [
+      {
+        &quot;image_url&quot;: &quot;/content/images/2023/10/mega-menu-banner.png&quot;,
+        &quot;link_url&quot;: &quot;/collections/wiring-specialties&quot;
+      }
+    ]
+  }
+]
+</code></pre>
+<p>You can upload the images for banners in the Image Manager in BigCommerce. Here is some documentation on how to do that: <a href="https://support.bigcommerce.com/s/article/Using-the-Image-Manager" target="_blank">BigCommerce Image Manager</a>. You can also use the URL of the image if you have it hosted somewhere else.</p>
               
             </div>
           </div><footer>
