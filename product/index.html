@@ -57,7 +57,7 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#short-description">Short Description</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#more-info-in-product-picklist">'More Info' in product picklist</a>
+    <li class="toctree-l2"><a class="reference internal" href="#more-info-in-product-picklist-accordion">'More Info' in product picklist accordion</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#other-option-with-input-field">'Other' option with input field</a>
     </li>
@@ -76,10 +76,6 @@
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../menu/">Mega Menu</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../other/">Other</a>
                 </li>
               </ul>
       </div>
@@ -112,22 +108,45 @@
 <h2 id="short-description">Short Description</h2>
 <p><img alt="Short Description" src="../img/short-description.png" /></p>
 <p>The short description is a brief description of the product. It should be a short paragraph that describes the product in a few sentences. The short description should be displayed at the top of the product page.
-It is not mandatory, so not all the products will have it.</p>
-<h2 id="more-info-in-product-picklist">'More Info' in product picklist</h2>
+It is not mandatory, so not all the products will have it.
+It is managed inside the Advanced Metafields app, in the Products &amp; Variants, under Catalog List.</p>
+<p><img alt="product-metafields.png" src="../img/product-metafields.png" />
+<img alt="product-metafields2.png" src="../img/product-metafields2.png" />
+<img alt="short-description-inst.png" src="../img/short-description-inst.png" /></p>
+<h2 id="more-info-in-product-picklist-accordion">'More Info' in product picklist accordion</h2>
 <p><img alt="More Info" src="../img/more-info.png" /></p>
-<p>The product picklist is a dropdown menu that allows the user to select different options for the product. To display the 'More info' button in the product picklist, we need to add the information in the Metafields.</p>
+<p>The product picklist is an accordion that allows the user to select different options for the product. To display the 'More info' button in the accordion, we need to add the information in the Metafields as well.
+This is set in the Channels metafields, under Catalog List.</p>
+<p><img alt="channel-metafields.png" src="../img/channel-metafields.png" />
+<img alt="channel-metafields2.png" src="../img/channel-metafields2.png" />
+It's important to enter the correct name under the Option Name field, which can be copied from the site itself or from the backend.</p>
+<p><img alt="more-info-inst.png" src="../img/more-info-inst.png" />
+<img alt="more-info-inst3.png" src="../img/more-info-inst3.png" />
+<img alt="more-info-inst2.png" src="../img/more-info-inst2.png" /></p>
 <h2 id="other-option-with-input-field">'Other' option with input field</h2>
-<p><img alt="Other Option" src="../img/other-input.png" /></p>
-<p>The 'Other' option with an input field is a custom option that allows the user to enter a custom value for the option when selecting 'Other'. To add the 'Other' option with an input field, we need to have an input text with the same name as the 'Other' option. from the previous set of options.</p>
+<p><img alt="other-option-input.png" src="../img/other-option-input.png" /></p>
+<p>The 'Other' option with an input field is a custom option that allows the user to enter a custom value for the option when selecting 'Other'. To add the 'Other' option with an input field, we need to have an input text with the same name as the 'Other' option from the previous set of options.</p>
 <h2 id="product-tabs">Product tabs</h2>
 <p><img alt="Product Tabs" src="../img/product-tabs.png" /></p>
 <p>The product tabs are used to display additional information about the product. The tabs include the description, specifications, shipping info, and FAQ. 
 The content comes from the product description, following a specific format, like the one already set in some of the current products.
-The format should be as follows:
-The shipping info comes from the 'Availability text' field in the product settings.</p>
+The format should be as follows:</p>
+<ul>
+<li>It uses horizontal lines to separate the sections, however, it will not create one tab for each horizontal line</li>
+<li>The section above the first horizontal line will be the description tab</li>
+<li>The sections between the first and the last horizontal line will be the specifications tab</li>
+<li>The section below the last horizontal line will be the FAQ tab</li>
+<li>The shipping info comes from the 'Availability text' field in the product settings.</li>
+</ul>
+<p><img alt="product-tabs-inst.png" src="../img/product-tabs-inst.png" />
+<img alt="product-tabs-inst2.png" src="../img/product-tabs-inst2.png" /></p>
 <h2 id="similar-items">Similar Items</h2>
 <p><img alt="Similar Items" src="../img/similar-items.png" /></p>
-<p>The similar items section displays products that are similar to the current product and they can be added all at once by clicking on the button. Note that this is not the Related Items. The products are set using metafields and they must be simple products (with no variants).</p>
+<p>The similar items section displays products that are similar to the current product and they can be added all at once by clicking on the button. Note that this is not the Related Items. The products are set using metafields and they must be simple products (with no variants or modifiers).
+In the Advanced Metafields app, go to the Products &amp; Variants section, under Catalog List. Under 'Similar Products', enter the id of the products you would like to display.</p>
+<p><img alt="similar-items-inst.png" src="../img/similar-items-inst.png" />
+You can get the product id from the url of the product in the backend</p>
+<p><img alt="get-product-id.png" src="../img/get-product-id.png" /></p>
 <h2 id="related-items">Related Items</h2>
 <p><img alt="Related Items" src="../img/related-items.png" /></p>
 <p>The related items section displays products that are related to the current product. These are usually automatically picked by BigCommerce or can be set manually in the product settings.
