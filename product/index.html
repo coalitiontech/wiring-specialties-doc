@@ -125,7 +125,18 @@ It's important to enter the correct name under the Option Name field, which can 
 <img alt="more-info-inst2.png" src="../img/more-info-inst2.png" /></p>
 <h2 id="other-option-with-input-field">'Other' option with input field</h2>
 <p><img alt="other-option-input.png" src="../img/other-option-input.png" /></p>
-<p>The 'Other' option with an input field is a custom option that allows the user to enter a custom value for the option when selecting 'Other'. To add the 'Other' option with an input field, we need to have an input text with the same name as the 'Other' option from the previous set of options.</p>
+<p>The 'Other' option with an input field is a custom functionality that allows the user to enter a value in an input when selecting 'Other' option in the checkbox.
+To add the 'Other' option with an input field, we need to follow some specific guidelines.
+1 - Create an invisible product called 'Other'.
+<img alt="other-option-inst2.png" src="../img/other-option-inst2.png" />
+2 - Go to one ot the product options that you would like to add the input field. It should be a picklist option.
+<img alt="other-option-inst.png" src="../img/other-option-inst.png" />
+3 - Add the 'Other' product as the last one. You can change the label.
+<img alt="other-option-inst3.png" src="../img/other-option-inst3.png" />
+4 - Then you'll need to create a new multi-line field, with the same name as the option you want to attach it to, and add '- other' at the end.
+<img alt="other-option-inst4.png" src="../img/other-option-inst4.png" />
+5 - Make sure to drag the multi-line field option to be right after the option you want to attach it to, in the option sets.
+<img alt="other-option-inst5.png" src="../img/other-option-inst5.png" /></p>
 <h2 id="product-tabs">Product tabs</h2>
 <p><img alt="Product Tabs" src="../img/product-tabs.png" /></p>
 <p>The product tabs are used to display additional information about the product. The tabs include the description, specifications, shipping info, and FAQ. 
